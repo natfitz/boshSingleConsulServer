@@ -1,0 +1,5 @@
+---
+name: consul
+dependencies: []
+files:
+- consul/*linux_amd64.zip

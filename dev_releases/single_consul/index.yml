@@ -1,0 +1,41 @@
+---
+builds:
+  33c937d7-c582-480b-bbee-fe4abe75f95d:
+    version: 0+dev.1
+  f7380cbc-6954-4d07-b76f-bbb893809e74:
+    version: 0+dev.2
+  32172c98-ef85-436c-aeea-76033a468668:
+    version: 0+dev.3
+  9b2f3970-4bee-4027-95b6-121babde1536:
+    version: 0+dev.4
+  0ce625be-e529-41af-84ba-d34fcb8dd763:
+    version: 0+dev.5
+  6d50bee0-ada3-46d5-80c1-140a215e21f5:
+    version: 0+dev.6
+  8bfaf3b2-2a06-41b3-8831-6ceb36878370:
+    version: 0+dev.7
+  31396d3d-388c-4a8d-a875-a27fbca01a77:
+    version: 0+dev.8
+  3b703746-8b35-444a-a455-f45102c80c25:
+    version: 0+dev.9
+  90fbdf4c-a10d-4ec1-8507-4d78bfffb134:
+    version: 0+dev.10
+  d65d7123-4a9a-43be-b811-e48a9b8e2212:
+    version: 0+dev.11
+  3b7866f1-6529-4f7d-b6ae-552180adc070:
+    version: 0+dev.12
+  e6ceb579-8e2e-4f31-8ed1-b11abae7312c:
+    version: 0+dev.13
+  7cfbbf05-2db8-470f-81bb-74ce637518c3:
+    version: 0+dev.14
+  26188de6-2b9e-4cf7-8db0-12d73381db07:
+    version: 0+dev.15
+  66a70928-dcc4-4b25-8f58-675c43234d64:
+    version: 0+dev.16
+  dbc95def-a8cc-4da9-88f1-30d63fa3c40d:
+    version: 0+dev.17
+  32728afb-ed6a-459e-9983-6055db0db5fd:
+    version: 0+dev.18
+  9c40da09-eced-4465-bbf6-2dd557ef828c:
+    version: 0+dev.19
+format-version: '2'

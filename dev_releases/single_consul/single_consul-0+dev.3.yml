@@ -1,0 +1,16 @@
+---
+packages:
+- name: consul_0.4
+  version: 24e4f4b1bb39db87ca0144d688c00bd7fc60c73c
+  fingerprint: 24e4f4b1bb39db87ca0144d688c00bd7fc60c73c
+  sha1: ceff29233045e9e056a69325c826b19790c69f56
+  dependencies: []
+jobs:
+- name: lanuch_server
+  version: a6033f9ffe3a7130aafc88a8fd3a4ce1171fd2f9
+  fingerprint: a6033f9ffe3a7130aafc88a8fd3a4ce1171fd2f9
+  sha1: 244101284045ff0cb932f92c735b88890fa99216
+commit_hash: '00000000'
+uncommitted_changes: false
+name: single_consul
+version: 0+dev.3

@@ -1,0 +1,58 @@
+---
+compilation:
+  cloud_properties:
+    name: random
+  network: consul1
+  reuse_compilation_vms: true
+  workers: 6
+director_uuid: 28539132-6d43-4e1b-bf40-f2ce032ee9f8
+jobs:
+- name: consul
+  instances: 3
+  networks:
+  - name: consul1
+    static_ips:
+    - 10.244.68.3
+    - 10.244.68.4
+    - 10.244.68.5
+  persistent_disk: 0
+  resource_pool: small_z1
+  templates:
+    - name: consul
+  properties:
+    consul:
+      join_hosts:
+      - 10.244.68.3
+      - 10.244.68.4
+      - 10.244.68.5
+  update:
+    canaries: 0
+    max_in_flight: 50
+name: consul-test
+networks:
+- name: consul1
+  subnets:
+  - gateway: 10.244.68.1
+    name: consul1
+    range: 10.244.68.0/24
+    static:
+    - 10.244.68.2 - 10.244.68.10
+  type: manual
+properties: {}
+releases:
+- name: single_consul
+  version: latest
+resource_pools:
+- cloud_properties:
+    name: random
+  name: small_z1
+  network: consul1
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest
+update:
+  canaries: 1
+  canary_watch_time: 5000-120000
+  max_in_flight: 50
+  serial: true
+  update_watch_time: 5000-120000

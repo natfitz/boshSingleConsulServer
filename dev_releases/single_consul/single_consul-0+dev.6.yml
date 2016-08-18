@@ -1,0 +1,16 @@
+---
+packages:
+- name: consul_0.4
+  version: 24e4f4b1bb39db87ca0144d688c00bd7fc60c73c
+  fingerprint: 24e4f4b1bb39db87ca0144d688c00bd7fc60c73c
+  sha1: ceff29233045e9e056a69325c826b19790c69f56
+  dependencies: []
+jobs:
+- name: launch_server
+  version: 3df383ca00f0f39b0a7d8a0ef5b8e326d529e1ff
+  fingerprint: 3df383ca00f0f39b0a7d8a0ef5b8e326d529e1ff
+  sha1: 70e5086aad1db429c19db250b413ba3aef502028
+commit_hash: '00000000'
+uncommitted_changes: false
+name: single_consul
+version: 0+dev.6
