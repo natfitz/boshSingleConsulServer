@@ -1,0 +1,24 @@
+networks:
+- name: consul1
+  subnets:
+  - gateway: 10.244.68.1
+    name: consul1
+    range: 10.244.68.0/24
+    static:
+    - 10.244.68.2 - 10.244.68.10
+  type: manual
+properties: {}
+
+resource_pools:
+- name: default
+  network: consul1
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest
+
+compilation:
+  cloud_properties:
+    name: random
+  network: consul1
+  reuse_compilation_vms: true
+  workers: 6
