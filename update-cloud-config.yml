@@ -5,4 +5,3 @@ inputs:
 
 run:
   path: ls
-  args: [/consul-deploy]
