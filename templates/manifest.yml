@@ -6,11 +6,16 @@ releases:
 - name: single_consul
   version: latest
 
+stemcells:
+- alias: default
+  os: bosh-warden-boshlite-ubuntu-trusty-go_agent
+  version: latest
+
 instance_groups:
 - name: consul-test
   instances: 3
-  resource_pool: consul_pool
   persistent_disk: 1024
+  stemcell: default
   networks:
   - name: consul1
     static_ips:

@@ -9,13 +9,6 @@ networks:
   type: manual
 properties: {}
 
-resource_pools:
-- name: conul_pool
-  network: consul1
-  stemcell:
-    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
-    version: latest
-
 compilation:
   cloud_properties:
     name: random
