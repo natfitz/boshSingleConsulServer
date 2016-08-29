@@ -1,4 +1,5 @@
 platform: linux
+  image: concourse/bosh-deployment-resource
 
 inputs:
 - name: consul-deploy
