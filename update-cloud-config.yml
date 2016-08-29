@@ -1,4 +1,4 @@
 platform: linux
 
 run:
-  path: ./update-cloud-config.sh
+  path: ./consul-deploy/update-cloud-config.sh
