@@ -1,6 +1,6 @@
 ---
 name: consul-test
-director_uuid: <%= `bosh status --uuid` %>
+director_uuid: 28539132-6d43-4e1b-bf40-f2ce032ee9f8
 
 releases:
 - name: single_consul
@@ -8,7 +8,7 @@ releases:
 
 stemcells:
 - alias: default
-  os: bosh-warden-boshlite-ubuntu-trusty-go_agent
+  name: bosh-warden-boshlite-ubuntu-trusty-go_agent
   version: latest
 
 instance_groups:
@@ -16,6 +16,7 @@ instance_groups:
   instances: 3
   persistent_disk: 1024
   stemcell: default
+  vm_type: small
   networks:
   - name: consul1
     static_ips:
