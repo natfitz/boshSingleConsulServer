@@ -4,4 +4,4 @@ inputs:
 - name: consul-deploy
 
 run:
-  path: ./consul-deploy/update-cloud-config.sh
+  path: consul-deploy/update-cloud-config.sh
