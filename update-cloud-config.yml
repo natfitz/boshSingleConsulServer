@@ -4,4 +4,5 @@ inputs:
 - name: consul-deploy
 
 run:
-  path: cd consul-deploy && ls
+  path: ls
+  args: [/consul-deploy]
