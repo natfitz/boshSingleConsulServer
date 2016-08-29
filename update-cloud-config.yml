@@ -1,4 +1,5 @@
 platform: linux
 
 run:
-  path: ./consul-deploy/update-cloud-config.sh
+  path: echo
+  args: [bosh target]
