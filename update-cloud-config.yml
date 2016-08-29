@@ -1,3 +1,4 @@
+platform: linux
 
 run:
   path: update-cloud-config
