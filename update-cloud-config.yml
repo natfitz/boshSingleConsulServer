@@ -4,4 +4,4 @@ inputs:
 - name: consul-deploy
 
 run:
-  path: tree
+  path: cd consul-deploy && ls
