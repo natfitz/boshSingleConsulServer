@@ -1,5 +1,7 @@
 platform: linux
 
+inputs:
+- name: consul-deploy
+
 run:
-  path: bosh
-  args: [target]
+  path: ./consul-deploy/update-cloud-config.sh
