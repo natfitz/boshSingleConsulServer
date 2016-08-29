@@ -1,5 +1,4 @@
 platform: linux
 
 run:
-  path: echo
-  args: [$(bosh target)]
+  path: bosh target
