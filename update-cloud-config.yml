@@ -1,4 +1,5 @@
 platform: linux
 
 run:
-  path: bosh target
+  path: bosh
+  args: [target]
