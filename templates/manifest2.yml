@@ -1,5 +1,5 @@
 ---
-name: consul-test
+name: consul-second
 director_uuid: <%= `bosh status --uuid` %>
 
 releases:
@@ -7,26 +7,29 @@ releases:
   version: latest
 
 instance_groups:
-- name: consul-test
+- name: consul-second
   instances: 3
-  resource_pool: consul_pool
+  resource_pool: default
   persistent_disk: 1024
   networks:
   - name: consul1
     static_ips:
-    - 10.244.68.3
-    - 10.244.68.4
-    - 10.244.68.5
+    - 10.244.68.6
+    - 10.244.68.7
+    - 10.244.68.8
   jobs:
   - name: consul
     release: single_consul
     properties:
        consul:
          join_hosts:
-         - 10.244.68.3
-         - 10.244.68.4
-         - 10.244.68.5
-         data_center: DC1
+         - 10.244.68.6
+         - 10.244.68.7
+         - 10.244.68.8
+         data_center: DC2
+         join_wan:
+         - "10.244.68.3:8302"
+
 update:
   canaries: 1
   canary_watch_time: 5000-120000

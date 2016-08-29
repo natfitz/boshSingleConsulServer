@@ -28,6 +28,12 @@ properties:
     description: DNS recursor to use if BOSH not provising DNS
     default: 8.8.8.8
 
+  consul.join_wan:
+    description: Hostname/IP for node for other consul servers to join on the wan.
+
+  consul.data_center:
+    description: Name of the data center
+    
   consul.ssl_ca:
     description: "The content of the ca file"
   consul.ssl_cert:

@@ -10,6 +10,8 @@
   is_server = p('consul.server', true)
   client_addr = p('consul.client_addr', '0.0.0.0')
   agent_config = p('consul.agent_config', nil)
+  join_wan = p('consul.join_wan', nil)
+  data_center = p('consul.data_center', nil)
 
   ssl_ca = p("consul.ssl_ca", nil)
   ssl_cert = p("consul.ssl_cert", nil)
@@ -31,7 +33,9 @@
       dns: 53,
       serf_wan: 8302
     },
-    disable_update_check: true
+    disable_update_check: true,
+    datacenter: data_center,
+    start_join_wan: join_wan
   }
 
   if ssl_ca and ssl_cert and ssl_key
